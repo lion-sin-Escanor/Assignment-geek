@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do LIST</title>
+    <link rel="stylesheet" href="./TO-DO-LIST.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+
+<body>
+    <div class="mobile-container">
+      <video muted autoplay loop>
+        <source src="https://video-previews.elements.envatousercontent.com/files/4352d105-6813-483e-b1e4-d2d060176d39/video_preview_h264.mp4">
+      </video>
+        <header>
+            <p>To Do List</p>
+        </header>
+        <nav>
+            <span onclick="show_ToDoList('yesterday')" id="yes">YesterDay</span>
+            <span onclick="show_ToDoList('today')" class="default" id="to">ToDay</span>
+            <span onclick="show_ToDoList('tommorow')" id="tom"> Tommorrow</span>
+        </nav>
+<!-- Today to do list design -->
+
+        <section id="today" class="show">
+          <br>
+          <div id="custom-search">
+            <input type="text" placeholder="task add" id="task_ip" />
+            <button id="add-btn">Add</button>
+            </div>
+         
+            <div id="special"></div>
+                <!-- &ensp; &ensp; <input type="checkbox" value="1" /> <label class="white-text">Complete first
+                    assignment</label> -->
+
+            
+            <!-- <div>
+                &ensp; &ensp; <input type="checkbox" value="1" /> <label class="white-text">Complete second
+                    assignment</label>
+
+            </div>
+            <div>
+                &ensp;  &ensp;   <input  type="checkbox" value="1"  /> <label class="white-text">Complete first assignment</label>
+                  
+              </div>
+              <div>
+                &ensp;  &ensp;   <input  type="checkbox" value="1"  /> <label class="white-text">Complete first assignment</label>
+                  
+              </div>
+              <div>
+                &ensp;  &ensp;   <input  type="checkbox" value="1"  /> <label class="white-text">Complete first assignment</label>
+                  
+              </div>
+              <div>
+                &ensp;  &ensp;   <input  type="checkbox" value="1"  /> <label class="white-text">Complete first assignment</label>
+                  
+              </div>
+              <div>
+                &ensp;  &ensp;   <input  type="checkbox" value="1"  /> <label class="white-text">Complete first assignment</label>
+                  
+              </div>
+              <div>
+                &ensp;  &ensp;   <input  type="checkbox" value="1"  /> <label class="white-text">Complete first assignment</label>
+                  
+              </div>
+              <div>
+                &ensp;  &ensp;   <input  type="checkbox" value="1"  /> <label class="white-text">Complete first assignment</label>
+                  
+              </div>
+              <div>
+                &ensp;  &ensp;   <input  type="checkbox" value="1"  /> <label class="white-text">Complete first assignment</label>
+                  
+              </div>
+              <div>
+                &ensp;  &ensp;   <input  type="checkbox" value="1"  /> <label class="white-text">Complete first assignment</label>
+                  
+              </div>
+              <div>
+                &ensp;  &ensp;   <input  type="checkbox" value="1"  /> <label class="white-text">Complete first assignment</label>
+                  
+              </div>
+              <div>
+                &ensp;  &ensp;   <input  type="checkbox" value="1"  /> <label class="white-text">Complete first assignment</label>
+                  
+              </div>
+              <span id="add-button" class="material-icons ">
+                control_point
+                </span> -->
+            
+            
+        </section>
+
+ <!-- Tommorow to do list design        -->
+
+ <section id="tommorow" class="hide">
+    <div>
+        &ensp; &ensp; <input type="checkbox" value="1" /> <label class="white-text">Tommorow first
+            assignment</label>
+
+    </div>
+    <div>
+        &ensp; &ensp; <input type="checkbox" value="1" /> <label class="white-text">Complete second
+            assignment</label>
+
+    </div>
+    <div>
+        &ensp;  &ensp;   <input  type="checkbox" value="1"  /> <label class="white-text">Complete first assignment</label>
+          
+      </div>
+      <div>
+        &ensp;  &ensp;   <input  type="checkbox" value="1"  /> <label class="white-text">Complete first assignment</label>
+          
+      </div>
+      <div>
+        &ensp;  &ensp;   <input  type="checkbox" value="1"  /> <label class="white-text">Complete first assignment</label>
+          
+      </div>
+      <div>
+        &ensp;  &ensp;   <input  type="checkbox" value="1"  /> <label class="white-text">Complete first assignment</label>
+          
+      </div>
+      <div>
+        &ensp;  &ensp;   <input  type="checkbox" value="1"  /> <label class="white-text">Complete first assignment</label>
+          
+      </div>
+      <div>
+        &ensp;  &ensp;   <input  type="checkbox" value="1"  /> <label class="white-text">Complete first assignment</label>
+          
+      </div>
+      <div>
+        &ensp;  &ensp;   <input  type="checkbox" value="1"  /> <label class="white-text">Complete first assignment</label>
+          
+      </div>
+      <div>
+        &ensp;  &ensp;   <input  type="checkbox" value="1"  /> <label class="white-text">Complete first assignment</label>
+          
+      </div>
+      <div>
+        &ensp;  &ensp;   <input  type="checkbox" value="1"  /> <label class="white-text">Complete first assignment</label>
+          
+      </div>
+      <div>
+        &ensp;  &ensp;   <input  type="checkbox" value="1"  /> <label class="white-text">Complete first assignment</label>
+          
+      </div>
+      <div>
+        &ensp;  &ensp;   <input  type="checkbox" value="1"  /> <label class="white-text">Complete first assignment</label>
+          
+      </div>
+      <!-- <span id="add-button" class="material-icons ">
+        control_point
+        </span> -->
+    
+    
+</section>
+
+<!-- YesterDay to do list -->
+<section id="yesterday" class="hide">
+    <div>
+        &ensp; &ensp; <input type="checkbox" value="1" /> <label class="white-text">Complete first
+            assignment</label>
+
+    </div>
+    <div>
+        &ensp; &ensp; <input type="checkbox" value="1" /> <label class="white-text">Complete second
+            assignment</label>
+
+    </div>
+    <div>
+        &ensp;  &ensp;   <input  type="checkbox" value="1"  /> <label class="white-text">Complete first assignment</label>
+          
+      </div>
+      <div>
+        &ensp;  &ensp;   <input  type="checkbox" value="1"  /> <label class="white-text">Complete first assignment</label>
+          
+      </div>
+      <div>
+        &ensp;  &ensp;   <input  type="checkbox" value="1"  /> <label class="white-text">Complete first assignment</label>
+          
+      </div>
+      <div>
+        &ensp;  &ensp;   <input  type="checkbox" value="1"  /> <label class="white-text">Complete first assignment</label>
+          
+      </div>
+      <div>
+        &ensp;  &ensp;   <input  type="checkbox" value="1"  /> <label class="white-text">Complete first assignment</label>
+          
+      </div>
+      <div>
+        &ensp;  &ensp;   <input  type="checkbox" value="1"  /> <label class="white-text">Complete first assignment</label>
+          
+      </div>
+      <div>
+        &ensp;  &ensp;   <input  type="checkbox" value="1"  /> <label class="white-text">Complete first assignment</label>
+          
+      </div>
+      <div>
+        &ensp;  &ensp;   <input  type="checkbox" value="1"  /> <label class="white-text">Complete first assignment</label>
+          
+      </div>
+      <div>
+        &ensp;  &ensp;   <input  type="checkbox" value="1"  /> <label class="white-text">Complete first assignment</label>
+          
+      </div>
+      <div>
+        &ensp;  &ensp;   <input  type="checkbox" value="1"  /> <label class="white-text">Complete first assignment</label>
+          
+      </div>
+      <div>
+        &ensp;  &ensp;   <input  type="checkbox" value="1"  /> <label class="white-text">Complete first assignment</label>
+          
+      </div>
+      <!-- <span id="add-button" class="material-icons ">
+        control_point
+        </span> -->
+    
+    
+</section>
+
+    </div>
+    <script src="./TO-DO-LIST.js"></script>
+</body>
+
+</html>
